@@ -35,6 +35,32 @@
                 "-front",
                 "--t"
             ]
+        },,
+        {
+            "taskName": "Run backend tests.",
+            "isTestCommand": true,
+            "args": [
+                "gae_util.py",
+                "-tests"
+            ]
+        },
+        {
+            "taskName": "Install python development dependencies.",
+            "isTestCommand": true,
+            "args": [
+                "gae_util.py",
+                "-lib",
+                "--lib-dev"
+            ]
+        },
+        {
+            "taskName": "Install python test dependencies.",
+            "isTestCommand": true,
+            "args": [
+                "gae_util.py",
+                "-lib",
+                "--lib-test"
+            ]
         }
     ]
 }

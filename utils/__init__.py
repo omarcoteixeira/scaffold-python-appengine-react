@@ -1,2 +1,2 @@
 """Utils module."""
-from .decorators import * # noqa
+from .decorators import *  # noqa
