@@ -15,13 +15,32 @@ def main():  # noqa
                              help='Build frontend.',
                              action='store_true')
 
+    front_group.add_argument('--build', '--b',
+                             help='Build frontend project.',
+                             action='store_true')
+    front_group.add_argument('--start', '--s',
+                             help='Start Frontend server.',
+                             action='store_true')
+    front_group.add_argument('--test', '--t',
+                             help='Start Frontend server.',
+                             action='store_true')
+
     args = parser.parse_args()
 
     if args.front:
         # Start Frontend server
         os.chdir('frontend')
+
         subprocess.call(['yarn'])
-        subprocess.call(['yarn', 'start'])
+
+        if args.test:
+            subprocess.call(['yarn', 'test'])
+
+        if args.build:
+            subprocess.call(['yarn', 'build'])
+        elif args.start:
+            subprocess.call(['yarn', 'start'])
+
         os.chdir('..')  # Go back to previous folder
 
 if __name__ == "__main__":

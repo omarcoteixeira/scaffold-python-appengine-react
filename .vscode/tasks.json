@@ -8,7 +8,8 @@
     "suppressTaskName": true,
     "tasks": [
         {
-            "taskName": "Start dev server.",
+            "taskName": "Run backend server.",
+            "isBuildCommand": true,
             "args": [
                 "/Users/usuario/google-cloud-sdk/bin/dev_appserver.py",
                 "--python_startup_script=${workspaceRoot}/pydev_startup.py",
@@ -18,10 +19,21 @@
             ]
         },
         {
-            "taskName": "Start frontend server.",
+            "taskName": "Run frontend server.",
+            "isBuildCommand": true,
             "args": [
                 "gae_util.py",
-                "-front"
+                "-front",
+                "--s"
+            ]
+        },
+        {
+            "taskName": "Run frontend tests.",
+            "isTestCommand": true,
+            "args": [
+                "gae_util.py",
+                "-front",
+                "--t"
             ]
         }
     ]
