@@ -1,6 +1,5 @@
 """Decorators for namespace management."""
 import endpoints
-import pdb
 
 
 def authorize(func):

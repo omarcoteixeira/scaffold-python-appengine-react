@@ -1,4 +1,4 @@
-""" Python dev startup for vs code."""
+"""Python dev startup for vs code."""
 
 import os
 import sys
