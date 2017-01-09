@@ -16,7 +16,7 @@ handlers:       # static then dynamic
   upload: favicon\.ico
 
 - url: /
-  static_files: frontend/index.html
+  static_files: frontend/src/app/index.html
   upload: frontend/index\.html
   secure: always
 

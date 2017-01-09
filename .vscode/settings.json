@@ -1,0 +1,13 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "files.exclude": {
+        "node_modules/": true,
+        "**/._*": true,
+        "**/*.pyc": true
+    },
+    "python.pythonPath": "/Users/usuario/anaconda2/bin/python",
+    "python.autoComplete.extraPaths": [
+        "/Users/usuario/google-cloud-sdk/platform/google_appengine",
+        "/Users/usuario/google-cloud-sdk/platform/google_appengine/lib"
+    ]
+}
