@@ -4,7 +4,7 @@
     "isShellCommand": true,
     "showOutput": "always",
     "args": [
-        "/Users/usuario/google-cloud-sdk/bin/dev_appserver.py",
+        "$HOME/google-cloud-sdk/bin/dev_appserver.py",
         "--python_startup_script=${workspaceRoot}/pydev_startup.py",
         "--automatic_restart=no",
         "--max_module_instances=default:1",
