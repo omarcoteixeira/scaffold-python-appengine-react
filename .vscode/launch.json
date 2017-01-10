@@ -129,8 +129,7 @@
             "secret": "gae",
             "port": 3000,
             "remoteRoot": "${workspaceRoot}",
-            "localRoot": "${workspaceRoot}",
-            "preLaunchTask": "python"
+            "localRoot": "${workspaceRoot}"
         }
     ]
 }
